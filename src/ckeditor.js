@@ -115,16 +115,37 @@ DecoupledEditor.defaultConfig = {
 	},
 	image: {
 		styles: [
-			'full',
-			'side',
 			'alignLeft',
-			'alignRight'
+			'alignCenter',
+			'alignRight',
+			'full',
+			'side'
+		],
+		resizeOptions: [
+			{
+					name: 'imageResize:original',
+					label: 'Original',
+					value: null
+			},
+			{
+					name: 'imageResize:50',
+					label: '50%',
+					value: '50'
+			},
+			{
+					name: 'imageResize:75',
+					label: '75%',
+					value: '75'
+			}
 		],
 		toolbar: [
 			'imageStyle:alignLeft',
+			'imageStyle:alignCenter',
+			'imageStyle:alignRight',
 			'imageStyle:full',
 			'imageStyle:side',
-			'imageStyle:alignRight',
+			'|',
+			'imageResize',
 			'|',
 			'imageTextAlternative'
 		]
