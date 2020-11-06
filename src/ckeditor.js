@@ -26,7 +26,6 @@ import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
-import ImageStyleUI from '@ckeditor/ckeditor5-image/src/imagestyle/imagestyleui';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
@@ -64,7 +63,6 @@ DecoupledEditor.builtinPlugins = [
 	Image,
 	ImageCaption,
 	ImageStyle,
-	ImageStyleUI,
 	ImageToolbar,
 	ImageUpload,
 	ImageResize,
@@ -118,12 +116,14 @@ DecoupledEditor.defaultConfig = {
 	image: {
 		styles: [
 			'full',
+			'side',
 			'alignLeft',
 			'alignRight'
 		],
 		toolbar: [
 			'imageStyle:alignLeft',
 			'imageStyle:full',
+			'imageStyle:side',
 			'imageStyle:alignRight',
 			'|',
 			'imageTextAlternative'
